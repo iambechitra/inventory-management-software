@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="656.0" prefWidth="1010.0" style="-fx-background-color: #E0E0E0;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.AdminScreenController">
+   <children>
+      <TableView fx:id="tableView" layoutX="9.0" layoutY="84.0" prefHeight="522.0" prefWidth="661.0" style="-fx-background-radius: 0.4cm;">
+        <columns>
+           <TableColumn fx:id="distributorOfProduct" prefWidth="81.0" text="DISTRO" />
+           <TableColumn fx:id="typeOfProduct" prefWidth="104.0" text="TYPE" />
+           <TableColumn fx:id="sizeOfProduct" prefWidth="56.0" text="SIZE" />
+           <TableColumn fx:id="brandOfProduct" prefWidth="98.0" text="BRAND" />
+           <TableColumn fx:id="modelOfProduct" prefWidth="59.0" text="MODEL" />
+           <TableColumn fx:id="serialOfProduct" prefWidth="87.0" text="S/N" />
+           <TableColumn fx:id="quantityOfProduct" prefWidth="65.0" text="QUANTITY" />
+           <TableColumn fx:id="priceOfProduct" prefWidth="55.0" text="PRICE" />
+           <TableColumn fx:id="realPriceOfProduct" prefWidth="55.0" text="rPRICE" />
+        </columns>
+      </TableView>
+      <TextField fx:id="type" blendMode="MULTIPLY" layoutX="844.0" layoutY="86.0" prefHeight="25.0" prefWidth="139.0" style="-fx-background-radius: 5cm;" />
+      <Label blendMode="MULTIPLY" layoutX="699.0" layoutY="86.0" prefHeight="25.0" prefWidth="118.0" text="TYPE OF PRODUCT" />
+      <TextField fx:id="brand" blendMode="MULTIPLY" layoutX="844.0" layoutY="150.0" prefHeight="25.0" prefWidth="139.0" style="-fx-background-radius: 5cm;" />
+      <Label blendMode="MULTIPLY" layoutX="698.0" layoutY="150.0" prefHeight="25.0" prefWidth="124.0" text="BRAND OF PRODUCT" />
+      <TextField fx:id="model" blendMode="MULTIPLY" layoutX="844.0" layoutY="183.0" prefHeight="25.0" prefWidth="139.0" style="-fx-background-radius: 5cm;" />
+      <Label blendMode="MULTIPLY" layoutX="698.0" layoutY="183.0" prefHeight="25.0" prefWidth="124.0" text="MODEL NUMBER" />
+      <TextField fx:id="serial" blendMode="MULTIPLY" layoutX="846.0" layoutY="216.0" prefHeight="25.0" prefWidth="139.0" style="-fx-background-radius: 5cm;" />
+      <Label blendMode="MULTIPLY" layoutX="698.0" layoutY="249.0" prefHeight="25.0" prefWidth="139.0" text="QUANTITY OF PRODUCT" />
+      <TextField fx:id="quantity" blendMode="MULTIPLY" layoutX="846.0" layoutY="249.0" prefHeight="25.0" prefWidth="139.0" style="-fx-background-radius: 5cm;" />
+      <Label blendMode="MULTIPLY" layoutX="696.0" layoutY="282.0" prefHeight="25.0" prefWidth="124.0" text="PRICE PER UNIT" />
+      <Button fx:id="commitButton" layoutX="796.0" layoutY="385.0" mnemonicParsing="false" onAction="#onClickCommitButton" prefHeight="25.0" prefWidth="82.0" style="-fx-background-radius: 5cm; -fx-background-color: #3F51B5; -fx-text-fill: #FFFFFF;" text="Commit">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button layoutX="498.0" layoutY="611.0" mnemonicParsing="false" onAction="#onClickDeleteButton" prefHeight="25.0" prefWidth="82.0" style="-fx-background-radius: 5cm; -fx-background-color: #F44336; -fx-text-fill: #FFFFFF;" text="DELETE">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Button>
+      <Button layoutX="588.0" layoutY="611.0" mnemonicParsing="false" onAction="#setOnClickMoveButton" prefHeight="25.0" prefWidth="82.0" style="-fx-background-radius: 5cm; -fx-background-color: #2196F3; -fx-text-fill: #FFFFFF;" text="MOVE">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Button>
+      <Button layoutX="789.0" layoutY="598.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="111.0" style="-fx-background-radius: 5cm;" text="Evaluation" />
+      <Button layoutX="790.0" layoutY="566.0" mnemonicParsing="false" onAction="#onClickAllDataButton" prefHeight="25.0" prefWidth="111.0" style="-fx-background-radius: 5cm;" text="ALL DATA">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+      <Button layoutX="790.0" layoutY="533.0" mnemonicParsing="false" onAction="#onClickCustomerDataButton" prefHeight="25.0" prefWidth="111.0" style="-fx-background-radius: 5cm;" text="Customers Data">
+         <font>
+            <Font size="11.0" />
+         </font></Button>
+      <Button fx:id="backToMainButton" layoutX="9.0" layoutY="611.0" mnemonicParsing="false" onAction="#onClickBackToMainButton" prefHeight="25.0" prefWidth="111.0" style="-fx-background-radius: 5cm;" text="Back to Main">
+         <font>
+            <Font name="System Bold" size="11.0" />
+         </font>
+      </Button>
+      <Label layoutX="261.0" layoutY="14.0" prefHeight="17.0" prefWidth="93.0" text="Admin Panel">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <TextField fx:id="price" blendMode="MULTIPLY" layoutX="846.0" layoutY="282.0" prefHeight="25.0" prefWidth="139.0" style="-fx-background-radius: 5cm;" />
+      <Label blendMode="MULTIPLY" layoutX="698.0" layoutY="216.0" prefHeight="25.0" prefWidth="124.0" text="SERIAL NUMBER" />
+      <TextField fx:id="distro" blendMode="MULTIPLY" layoutX="844.0" layoutY="54.0" prefHeight="25.0" prefWidth="139.0" style="-fx-background-radius: 5cm;" />
+      <Label blendMode="MULTIPLY" layoutX="700.0" layoutY="54.0" prefHeight="25.0" prefWidth="118.0" text="DISTRIBUTOR" />
+      <Separator layoutX="745.0" layoutY="425.0" prefWidth="200.0" />
+      <Separator layoutX="745.0" layoutY="521.0" prefWidth="200.0" />
+      <Button fx:id="totalAssetButton" layoutX="747.0" layoutY="437.0" mnemonicParsing="false" onAction="#onClickTotalAssetButton" prefHeight="60.0" prefWidth="200.0" style="-fx-background-color: #4CAF50; -fx-background-radius: 4cm;" text="\$ 0" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Button>
+      <Label layoutX="786.0" layoutY="497.0" text="is your total asset value" />
+      <Label blendMode="MULTIPLY" layoutX="696.0" layoutY="316.0" prefHeight="25.0" prefWidth="124.0" text="R_PRICE PER UNIT" />
+      <TextField fx:id="rPrice" blendMode="MULTIPLY" layoutX="846.0" layoutY="316.0" prefHeight="25.0" prefWidth="139.0" style="-fx-background-radius: 5cm;" />
+      <Separator layoutX="675.0" orientation="VERTICAL" prefHeight="656.0" prefWidth="11.0" />
+      <TextField fx:id="searchTextField" layoutX="74.0" layoutY="54.0" prefHeight="25.0" prefWidth="452.0" style="-fx-background-radius: 5cm;" />
+      <Button layoutX="539.0" layoutY="54.0" mnemonicParsing="false" onAction="#onClickSearchButton" prefHeight="25.0" prefWidth="65.0" style="-fx-background-radius: 5cm;" text="Search">
+         <font>
+            <Font name="System Bold" size="10.0" />
+         </font>
+      </Button>
+      <Label layoutX="812.0" layoutY="15.0" prefHeight="27.0" prefWidth="124.0" text="Create Entry">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Separator layoutX="759.0" layoutY="40.0" prefWidth="200.0" />
+      <TextField fx:id="size" blendMode="MULTIPLY" layoutX="844.0" layoutY="118.0" prefHeight="25.0" prefWidth="139.0" style="-fx-background-radius: 5cm;" />
+      <Label blendMode="MULTIPLY" layoutX="698.0" layoutY="118.0" prefHeight="25.0" prefWidth="124.0" text="SIZE OF PRODUCT" />
+      <Label blendMode="MULTIPLY" layoutX="696.0" layoutY="350.0" prefHeight="25.0" prefWidth="124.0" text="DATE OF PARCHASE" />
+      <DatePicker fx:id="datePicker" layoutX="848.0" layoutY="350.0" prefHeight="25.0" prefWidth="139.0" />
+   </children>
+</AnchorPane>

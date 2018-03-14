@@ -1,0 +1,22 @@
+<component name="ArtifactManager">
+  <artifact type="javafx" name="Manager">
+    <output-path>$PROJECT_DIR$/out/artifacts/Manager</output-path>
+    <properties id="javafx-properties">
+      <options>
+        <option name="appClass" value="sample.Main" />
+        <option name="description" value="" />
+        <option name="htmlPlaceholderId" value="" />
+        <option name="nativeBundle" value="all" />
+        <option name="title" value="A inventory management system" />
+        <option name="vendor" value="B-Tech Inc." />
+        <option name="version" value="v1.0.0" />
+      </options>
+    </properties>
+    <root id="root">
+      <element id="archive" name="SmartShop.jar">
+        <element id="module-output" name="SmartShop" />
+      </element>
+      <element id="library" level="project" name="sqlite-jdbc-3.21.0" />
+    </root>
+  </artifact>
+</component>
